@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://m8dscdv1g5kt"]
+
+[ext_resource type="Script" uid="uid://bu7w4265m68yk" path="res://Ball/ball.gd" id="1_65gad"]
+[ext_resource type="Texture2D" uid="uid://c5rnp1f6k5g36" path="res://icon.svg" id="1_l4sn5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_l4sn5"]
+bounce = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_65gad"]
+size = Vector2(117, 117)
+
+[node name="Ball" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_l4sn5")
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_65gad")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_l4sn5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_65gad")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

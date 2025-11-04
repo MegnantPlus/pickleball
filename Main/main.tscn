@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkfiyweaumc8s"]
+
+[ext_resource type="PackedScene" uid="uid://c4x6a5ayenlw5" path="res://Ground/ground.tscn" id="1_2w1kt"]
+[ext_resource type="PackedScene" uid="uid://m8dscdv1g5kt" path="res://Ball/ball.tscn" id="2_qvhan"]
+[ext_resource type="PackedScene" uid="uid://bgus764l32cc0" path="res://Pan/Pan.tscn" id="3_qvhan"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Wall" type="Node2D" parent="."]
+position = Vector2(5, -12)
+scale = Vector2(1, 0.9884008)
+
+[node name="Ground" parent="Wall" instance=ExtResource("1_2w1kt")]
+position = Vector2(625, 655)
+
+[node name="LeftWall" parent="Wall" instance=ExtResource("1_2w1kt")]
+position = Vector2(19, 384)
+rotation = 1.5707964
+
+[node name="RightWall" parent="Wall" instance=ExtResource("1_2w1kt")]
+position = Vector2(1134, 439)
+rotation = 1.5707964
+
+[node name="Floor" parent="Wall" instance=ExtResource("1_2w1kt")]
+position = Vector2(591, 33)
+
+[node name="Ball" parent="." instance=ExtResource("2_qvhan")]
+position = Vector2(591, 188)
+
+[node name="Pan" parent="." instance=ExtResource("3_qvhan")]
+position = Vector2(582, 509)
