@@ -17,3 +17,9 @@ texture = ExtResource("2_cfer2")
 position = Vector2(-1, 0.50000024)
 scale = Vector2(1, 0.755)
 shape = SubResource("RectangleShape2D_1ym6a")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

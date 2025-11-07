@@ -25,7 +25,7 @@ rotation = 1.5707964
 position = Vector2(591, 33)
 
 [node name="Ball" parent="." instance=ExtResource("2_qvhan")]
-position = Vector2(591, 188)
+position = Vector2(685, 379)
 
 [node name="Pan" parent="." instance=ExtResource("3_qvhan")]
-position = Vector2(582, 509)
+position = Vector2(531, 551)
