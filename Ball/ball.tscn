@@ -22,6 +22,8 @@ script = ExtResource("1_65gad")
 texture = ExtResource("1_l4sn5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 10
+visibility_layer = 512
 position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_65gad")
 

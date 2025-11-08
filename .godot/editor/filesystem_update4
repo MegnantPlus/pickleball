@@ -1,5 +1,4 @@
-res://Main/main.tscn
-res://Pan/Pan.tscn
-res://character_body_2d.gd
-res://Ball/ball.gd
 res://Ball/ball.tscn
+res://Main/main.tscn
+res://character_body_2d.gd
+res://Pan/Pan.tscn

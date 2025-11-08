@@ -4,17 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://c5rnp1f6k5g36" path="res://icon.svg" id="2_cfer2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ym6a"]
-size = Vector2(140, 35.76159)
+size = Vector2(141, 33.11258)
 
 [node name="Pan" type="CharacterBody2D"]
 script = ExtResource("1_ofl64")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.16, 0.235)
+position = Vector2(0.619998, -0.52000064)
+rotation = 1.5707964
+scale = Vector2(1.1503124, 0.22687499)
 texture = ExtResource("2_cfer2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0.50000024)
+light_mask = 0
+visibility_layer = 0
+rotation = 1.5707964
 scale = Vector2(1, 0.755)
 shape = SubResource("RectangleShape2D_1ym6a")
 
